@@ -48,6 +48,7 @@ def main():
     numIter = [1000, 10000, 100000, 1000000, 10000000]
 
     for i in numIter:
+        print("\nn iter: {}".format(i))
         # Numba
         start = time.clock()
         compPi_numba(i)
